@@ -1,6 +1,10 @@
 # crown [![Circle CI](https://circleci.com/gh/vdemedes/crown.svg?style=svg)](https://circleci.com/gh/vdemedes/crown)
 
-Roll out features gradually. Inspired by Ruby's [rollout](https://github.com/FetLife/rollout) gem.
+Give access to your new features gradually.
+Make them available to a percentage of your users, certain group or specific users.
+Get feedback, make users happy by providing exclusive access and don't break everything at once!
+
+Inspired by Ruby's [rollout](https://github.com/FetLife/rollout) gem.
 
 
 <h1 align="center">
