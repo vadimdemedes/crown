@@ -1,0 +1,28 @@
+{
+  "name": "crown",
+  "version": "1.0.0",
+  "description": "Roll out features gradually",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": "vdemedes/crown",
+  "author": {
+    "name": "Vadim",
+    "email": "vdemedes@gmail.com",
+    "url": "https://github.com/vdemedes"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "dependencies": {
+    "buffer-crc32": "^0.2.5",
+    "crown-memory-store": "^1.0.0",
+    "pinkie-promise": "^1.0.0"
+  },
+  "devDependencies": {
+    "ava": "sindresorhus/ava",
+    "make-lint": "^1.0.1"
+  },
+  "files": [
+    "index.js"
+  ]
+}
