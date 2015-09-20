@@ -3,6 +3,15 @@
 Roll out features gradually. Inspired by Ruby's [rollout](https://github.com/FetLife/rollout) gem.
 
 
+<h1 align="center">
+  <br>
+  <img width="200" src="media/logo.png">
+  <br>
+  <br>
+  <br>
+</h1>
+
+
 ### Features
 
 - Configurable backend
