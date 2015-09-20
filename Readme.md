@@ -147,6 +147,28 @@ yield rollout.disableUser('chat', goodUser);
 ```
 
 
+### Backend stores
+
+Crown can use whatever backend you want, as soon as there is an adapter for it.
+Take a look how easy it is to write one, check out built-in [MemoryStore](https://github.com/vdemedes/crown-memory-store/blob/master/index.js).
+
+There are 2 backend stores available: [MemoryStore](https://github.com/vdemedes/crown-memory-store) (built-in) and [RedisStore](https://github.com/vdemedes/crown-redis-store).
+
+To use redis store, install it via `$ npm install crown-redis-store` and:
+
+```js
+const RedisStore = require('crown-redis-store');
+const Crown = require('crown');
+
+// for accepted arguments see https://www.npmjs.com/package/redis#redis-createclient
+let redisStore = new RedisStore(6379, '127.0.0.1');
+
+let rollout = new Crown({
+  store: redisStore
+});
+```
+
+
 ### Tests
 
 [![Circle CI](https://circleci.com/gh/vdemedes/crown.svg?style=svg)](https://circleci.com/gh/vdemedes/crown)
