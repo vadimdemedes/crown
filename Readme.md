@@ -1,4 +1,6 @@
-# crown [![Circle CI](https://circleci.com/gh/vdemedes/crown.svg?style=svg)](https://circleci.com/gh/vdemedes/crown)
+# Crown
+
+[![Build Status](https://travis-ci.org/vdemedes/crown.svg?branch=master)](https://travis-ci.org/vdemedes/crown) [![Coverage Status](https://coveralls.io/repos/vdemedes/crown/badge.svg?branch=master&service=github)](https://coveralls.io/github/vdemedes/crown?branch=master)
 
 Give access to your new features gradually.
 Make them available to a percentage of your users, certain group or specific users.
@@ -16,7 +18,7 @@ Inspired by Ruby's [rollout](https://github.com/FetLife/rollout) gem.
 </h1>
 
 
-### Features
+## Features
 
 - Configurable backend
 - Roll out features to percentage of users, groups or specific users
@@ -24,14 +26,14 @@ Inspired by Ruby's [rollout](https://github.com/FetLife/rollout) gem.
 - Promise-based API
 
 
-### Installation
+## Installation
 
 ```
 $ npm install crown --save
 ```
 
 
-### Usage
+## Usage
 
 ```js
 const Crown = require('crown');
@@ -51,7 +53,7 @@ yield rollout.enablePercentage('chat', 20);
 var hasChat = yield rollout.isEnabled('chat', { id: 1 }); // true
 ```
 
-#### Check if user has access to a feature
+### Check if user has access to a feature
 
 To validate access of a certain user to a feature, use `isEnabled()` method.
 It accepts 2 arguments: `name` of the feature and `user` object.
@@ -71,7 +73,7 @@ rollout.idAttribute = '_id';
 ```
 
 
-#### Enable feature for everyone
+### Enable feature for everyone
 
 `enable()` method gives access to all users, regardless of any other rules.
 
@@ -86,7 +88,7 @@ yield rollout.disable('chat');
 ```
 
 
-#### Enable feature for a percentage of users
+### Enable feature for a percentage of users
 
 You can enable certain feature for only a percentage of all users:
 
@@ -101,7 +103,7 @@ CRC32(user_id + feature_name) % 100 < percentage
 ```
 
 
-#### Enable feature for a group of users
+### Enable feature for a group of users
 
 You can register a group of users, that satisfy some custom criteria:
 
@@ -130,7 +132,7 @@ yield rollout.disableGroup('chat', 'beta-testers');
 ```
 
 
-#### Enable feature for a specific user
+### Enable feature for a specific user
 
 You can also restrict access to specific users:
 
@@ -151,7 +153,7 @@ yield rollout.disableUser('chat', goodUser);
 ```
 
 
-### Backend stores
+## Backend stores
 
 Crown can use whatever backend you want, as soon as there is an adapter for it.
 Take a look how easy it is to write one, check out built-in [MemoryStore](https://github.com/vdemedes/crown-memory-store/blob/master/index.js).
@@ -173,15 +175,13 @@ let rollout = new Crown({
 ```
 
 
-### Tests
-
-[![Circle CI](https://circleci.com/gh/vdemedes/crown.svg?style=svg)](https://circleci.com/gh/vdemedes/crown)
+## Tests
 
 ```
-$ make test
+$ npm test
 ```
 
 
-### License
+## License
 
-MIT © [vdemedes](https://github.com/vdemedes)
+MIT © [Vadym Demedes](https://github.com/vdemedes)

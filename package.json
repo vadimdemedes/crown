@@ -6,12 +6,13 @@
   "main": "index.js",
   "repository": "vdemedes/crown",
   "author": {
-    "name": "Vadim",
+    "name": "Vadim Demedes",
     "email": "vdemedes@gmail.com",
     "url": "https://github.com/vdemedes"
   },
   "scripts": {
-    "test": "make test"
+    "test": "xo && nyc ava",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "dependencies": {
     "buffer-crc32": "^0.2.5",
@@ -20,9 +21,16 @@
   },
   "devDependencies": {
     "ava": "sindresorhus/ava",
-    "make-lint": "^1.0.1"
+    "coveralls": "^2.11.4",
+    "eslint-config-vdemedes": "*",
+    "nyc": "^3.2.2",
+    "xo": "^0.10.0"
   },
   "files": [
     "index.js"
-  ]
+  ],
+  "xo": {
+    "extends": "vdemedes",
+    "env": "node"
+  }
 }
