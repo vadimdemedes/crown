@@ -17,14 +17,14 @@
   "dependencies": {
     "buffer-crc32": "^0.2.5",
     "crown-memory-store": "^1.0.0",
-    "pinkie-promise": "^1.0.0"
+    "pinkie-promise": "^2.0.0"
   },
   "devDependencies": {
     "ava": "sindresorhus/ava",
     "coveralls": "^2.11.4",
     "eslint-config-vdemedes": "*",
-    "nyc": "^3.2.2",
-    "xo": "^0.10.0"
+    "nyc": "^4.0.1",
+    "xo": "^0.11.2"
   },
   "files": [
     "index.js"
