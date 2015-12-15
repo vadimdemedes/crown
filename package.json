@@ -24,7 +24,7 @@
     "coveralls": "^2.11.4",
     "eslint-config-vdemedes": "*",
     "nyc": "^3.2.2",
-    "xo": "^0.10.0"
+    "xo": "^0.12.1"
   },
   "files": [
     "index.js"
