@@ -22,7 +22,7 @@
   "devDependencies": {
     "ava": "sindresorhus/ava",
     "coveralls": "^2.11.4",
-    "eslint-config-vdemedes": "*",
+    "eslint-config-vdemedes": "1.0.1",
     "nyc": "^3.2.2",
     "xo": "^0.10.0"
   },
