@@ -23,7 +23,7 @@
     "ava": "sindresorhus/ava",
     "coveralls": "^2.11.4",
     "eslint-config-vdemedes": "*",
-    "nyc": "^3.2.2",
+    "nyc": "^5.2.0",
     "xo": "^0.10.0"
   },
   "files": [
